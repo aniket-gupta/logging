@@ -46,11 +46,11 @@ func SetLevel(lvl level) {
 
 // Logger ...
 type Logger struct {
-	DEBUG   *Wrapper
-	INFO    *Wrapper
-	WARNING *Wrapper
-	ERROR   *Wrapper
-	FATAL   *Wrapper
+	DEBUG   LoggerInterface
+	INFO    LoggerInterface
+	WARNING LoggerInterface
+	ERROR   LoggerInterface
+	FATAL   LoggerInterface
 }
 
 // New returns instance of Logger
